@@ -1,0 +1,52 @@
+<ion-content scrollY="false">
+  <ion-slides #introSlides>
+    <ion-slide>
+      <div class="slide1-container">
+        <h1>WELCOME</h1>
+        <h2>
+          YOU ARE <br />
+          ABOUT TO...
+        </h2>
+        <ion-fab vertical="bottom" horizontal="end">
+          <ion-fab-button (click)="next()" size="large">NEXT</ion-fab-button>
+        </ion-fab>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide2-container">
+        <h2>
+          JOIN <br />
+          TOURNAMENTS
+        </h2>
+        <ion-img src="assets/images/gameLogo.jpg"></ion-img>
+        <ion-fab vertical="bottom" horizontal="end">
+          <ion-fab-button (click)="next()" size="large">NEXT</ion-fab-button>
+        </ion-fab>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide3-container">
+        <ion-img src="assets/images/gameLogo.jpg"></ion-img>
+        <h2>
+          FIND YOUR <br />
+          BEST MATCHES
+        </h2>
+        <ion-fab vertical="bottom" horizontal="end">
+          <ion-fab-button (click)="next()" size="large">NEXT</ion-fab-button>
+        </ion-fab>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide4-container">
+        <h2>
+          BECOME PART <br />
+          OF THE GAMING <br />
+          COMMUNITY
+        </h2>
+        <ion-fab vertical="bottom" horizontal="end">
+          <ion-fab-button size="large">START</ion-fab-button>
+        </ion-fab>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,162 @@
+<div #detailForm class="main1" style="display: contents">
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="ion-no-padding">
+      <ion-buttons slot="start">
+        <ion-button routerLink="/login">
+          <ion-icon name="chevron-back-outline"></ion-icon>Back
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content scrollY="false">
+    <div class="container">
+      <form>
+        <h1>SIGN UP</h1>
+        <ion-input placeHolder="NAME" mode="ios"></ion-input>
+        <ion-input placeHolder="EMAIL" mode="ios"></ion-input>
+        <ion-input placeHolder="PASSWORD" mode="ios"></ion-input>
+        <ion-item lines="none">
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          <p>
+            By checking this box I agree to the
+            <a href="#">Terms and Conditions </a> and the
+            <a href="#">Privacy Policy </a> of this app.
+          </p>
+        </ion-item>
+        <button (click)="detailNext()">NEXT</button>
+      </form>
+    </div>
+  </ion-content>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar>
+      <div class="pagination">
+        <div class="bullet active"></div>
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>
+<!--  -->
+<!-- games list portion -->
+<!--  -->
+<div class="main2" #gamesList style="display: none">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="main2Back()">
+          <ion-icon name="chevron-back-outline"></ion-icon>Back
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button (click)="main2Skip()">
+          Skip<ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <h1>JOIN YOUR FAVOURITE GAMES</h1>
+  </ion-header>
+  <ion-content>
+    <ion-list lines="none" inset mode="md" class="signup">
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <div class="item-content"></div>
+        <ion-icon slot="end" name="add-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar>
+      <div class="pagination">
+        <div class="bullet"></div>
+        <div class="bullet active"></div>
+        <div class="bullet"></div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>
+<!--  -->
+<!-- platform portion -->
+<!--  -->
+<div class="main3" #platformDiv style="display: none">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="main3back()">
+          <ion-icon name="chevron-back-outline"></ion-icon>Back
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button>
+          Skip<ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <h1>
+      SET UP <br />
+      YOUR PLATFORM
+    </h1>
+  </ion-header>
+  <ion-content mode="ios" scrollY="false">
+    <div class="container2">
+      <div class="image-div"></div>
+      <ion-item lines="none">
+        <ion-label slot="start">USERNAME</ion-label>
+        <ion-input class="signup-username"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label class="birthday" slot="start">BIRTHDAY</ion-label>
+        <ion-datetime placeholder="DD|MM|YYYY" displayFormat="DD/MM/YYYY">
+        </ion-datetime>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label class="birthday" slot="start">GENDER</ion-label>
+        <ion-select placeholder="MALE">
+          <ion-select-option>Female</ion-select-option>
+          <ion-select-option>Male</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label slot="start">PHONE</ion-label>
+        <ion-select placeholder="+973">
+          <ion-select-option>+92</ion-select-option>
+          <ion-select-option>+973</ion-select-option>
+        </ion-select>
+        <ion-input class="signup-username"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label slot="start">TIME ZONE</ion-label>
+        <ion-select placeholder="GMT +3">
+          <ion-select-option>+92</ion-select-option>
+          <ion-select-option>+973</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <h6>PICK CONSOLE</h6>
+      <div class="console-icons">
+        <ion-icon name="logo-playstation"></ion-icon>
+        <ion-icon name="logo-xbox"></ion-icon>
+        <ion-icon name="logo-windows"></ion-icon>
+      </div>
+      <button>START</button>
+    </div>
+  </ion-content>
+</div>

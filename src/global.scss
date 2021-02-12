@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid black;
+}
+
+.native-input.sc-ion-input-ios {
+  padding: 10px 15px;
+}
+
+// ion-list of signup page main div 2
+
+.list-md.list-inset {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.signup-username {
+  .native-input {
+    padding: 0 20px;
+  }
+}

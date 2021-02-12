@@ -1,0 +1,44 @@
+.heading {
+  text-align: center;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-button-container {
+  display: flex;
+
+  button {
+    height: 30px;
+    width: 70px;
+    font-size: 10px;
+  }
+}
+
+// .segment-container {
+//   border: 1px solid;
+
+//   .segment-content {
+//     height: 500px;
+//     width: 100%;
+//   }
+// }
+
+// ion-segment {
+//   border-radius: 0px;
+//   ion-segment-button {
+//     min-width: auto !important;
+//     --border-radius: 0px;
+//     --padding-start: 0px;
+//     --padding-end: 0px;
+//     // --border-width: 0px;
+//     ion-label {
+//       font-size: 10px;
+//     }
+//   }
+// }
+
+// --padding-top: 0px;
+// --padding-bottom: 0px;

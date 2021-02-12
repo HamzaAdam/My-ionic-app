@@ -1,0 +1,11 @@
+<div *ngIf="recipeItem">
+  <ion-item [routerLink]="['./', recipeItem.id]">
+    <ion-avatar slot="start">
+      <ion-img [src]="recipeItem.imageURL"></ion-img>
+    </ion-avatar>
+    <ion-label> {{ recipeItem.title }} </ion-label>
+  </ion-item>
+  <app-recipe-detail-picker
+    [pickedRecipe]="recipeItem"
+  ></app-recipe-detail-picker>
+</div>

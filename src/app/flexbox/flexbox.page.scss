@@ -1,0 +1,114 @@
+ion-header {
+  .searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+
+    ion-searchbar {
+      width: 300px;
+    }
+
+    ion-icon {
+      font-size: xx-large;
+    }
+  }
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .matches-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-top: 2px solid;
+    margin-bottom: 0px;
+    padding-top: 30px;
+
+    .heading {
+      font-size: 16px;
+      font-weight: bolder;
+      margin-bottom: 0px;
+      color: gray;
+      display: block;
+    }
+
+    .match-images-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .match-images-div {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .image-div {
+          position: relative;
+          height: 110px;
+          width: 140px;
+
+          .image-data-div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .text {
+              color: white;
+              margin: 0 20px 0 20px;
+              font-weight: bolder;
+            }
+
+            .details {
+              color: white;
+              margin: 0 20px 0 20px;
+            }
+
+            .timer {
+              color: white;
+              font-size: 18px;
+              font-weight: bolder;
+              margin-bottom: 0px;
+            }
+          }
+
+          .image-style {
+            border-radius: 25px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-container {
+    height: 240px;
+    margin-bottom: 30px;
+
+    ion-slide > img {
+      height: 200px;
+    }
+
+    ion-slides {
+      height: 100%;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

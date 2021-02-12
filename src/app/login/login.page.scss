@@ -1,0 +1,50 @@
+.main-container {
+  margin-top: 110px;
+  border-top: 2px solid;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  padding: 0 15px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 90px;
+      font-weight: 900;
+      font-family: system-ui;
+      font-size: 40px;
+    }
+
+    a {
+      width: 100%;
+      display: block;
+      margin: 10px 0 30px 0;
+      p {
+        text-align: end;
+      }
+    }
+
+    button {
+      height: 60px;
+      width: 220px;
+      border-radius: 15px;
+      background-color: var(--ion-color-primary);
+      font-size: 40px;
+      font-weight: 900;
+      color: blanchedalmond;
+      font-family: system-ui;
+      letter-spacing: -0.5mm;
+    }
+
+    ion-input {
+      border: 1px solid;
+      border-radius: 30px;
+      margin: 10px;
+      font-size: large;
+    }
+  }
+}
