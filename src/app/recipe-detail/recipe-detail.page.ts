@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { AlertController } from "@ionic/angular";
-import { RecipeServiceService } from "../recipe-service.service";
+import { RecipeServiceService } from "../services/recipe-service.service";
 import { Recipe } from "../recipes/recipe.model";
 
 @Component({

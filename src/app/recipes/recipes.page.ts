@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
-import { RecipeServiceService } from "../recipe-service.service";
+import { RecipeServiceService } from "../services/recipe-service.service";
 import { Recipe } from "./recipe.model";
 
 @Component({
