@@ -26,7 +26,7 @@ ion-content {
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
   background: white;
-  padding: 3px;
+  padding: 5px;
 
   .heading {
     text-align: center;
@@ -38,31 +38,6 @@ ion-content {
   }
 }
 
-// .tabs-container {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .tab-button-container {
-//   display: flex;
-
-//   button {
-//     height: 30px;
-//     width: 70px;
-//     font-size: 10px;
-//   }
-//   .btn:hover {
-//     font-size: 15px;
-//     height: 35px;
-//     width: 80px;
-//     background: blue;
-//   }
-// }
-
-// .tab-content-container {
-//   height: 500px;
-//   border: 1px solid;
-// }
 
 /*
  CSS for the main interaction
@@ -92,27 +67,18 @@ ion-content {
 .tabset > label {
   position: relative;
   display: inline-block;
-  padding: 15px 15px 25px;
-  border: 1px solid transparent;
-  border-bottom: 0;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid black;
+  border-bottom: 1px solid grey ;
   cursor: pointer;
-  font-weight: 600;
-}
-
-.tabset > label::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d;
+  font-size: 12px;
+  letter-spacing: -0.4mm;
 }
 
 .tabset > label:hover,
 .tabset > input:focus + label {
   color: #06c;
-  cursor: pointer;
+  border-color: black;
 }
 
 .tabset > label:hover::after,
@@ -122,38 +88,36 @@ ion-content {
 }
 
 .tabset > input:checked + label {
-  border-color: black;
-  border-bottom: 2px solid white;
-  margin-bottom: -2px;
+  border-bottom: 1px solid grey;
+  margin-bottom: -1px;
+  padding: 10px 14px 0px 13px;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -0.35mm ;
+  background: grey;
 }
 
-.tab-panel {
-  padding: 30px 0;
-  border-top: 2px solid black;
+
+.tab-panels{
+  margin-top: -1px;
+
+  section.tab-panel{
+    background: grey;
+    color: whitesmoke;
+    border: 1px solid black;
+    height: 450px;
+    padding: 10px;
+
+  }
 }
 
-// .segment-container {
-//   border: 1px solid;
-
-//   .segment-content {
-//     height: 500px;
-//     width: 100%;
-//   }
+// .tabset > label::after {
+//   content: "";
+//   position: absolute;
+//   left: 15px;
+//   bottom: 10px;
+//   width: 22px;
+//   height: 4px;
+//   background: #8d8d8d;
 // }
-
-// ion-segment {
-//   border-radius: 0px;
-//   ion-segment-button {
-//     min-width: auto !important;
-//     --border-radius: 0px;
-//     --padding-start: 0px;
-//     --padding-end: 0px;
-//     // --border-width: 0px;
-//     ion-label {
-//       font-size: 10px;
-//     }
-//   }
-// }
-
-// --padding-top: 0px;
-// --padding-bottom: 0px;
